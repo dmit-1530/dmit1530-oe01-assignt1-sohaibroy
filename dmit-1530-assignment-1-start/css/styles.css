@@ -2,16 +2,397 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-400: #78909c;
     --blue-grey-900: #263238;
+    --blue-grey-800: #37474F;
+    --header-background-color: #111111;
 }
 
 body {
     color: #000;
-    text-align: center; 
-}
+    text-align: center;
+    margin: 0 auto; 
+} 
 
 header, footer {
     background-color: var(--blue-grey-50);
     color: #fff;
     padding: 2rem 4rem;   
+}
+
+header {
+    background-color: var(--header-background-color);
+}
+
+.title-flex {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h4 {
+    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+}
+
+nav img {
+    height: 7.5vh;
+}
+
+.top-nav-flex {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+ul a {
+    border: none;
+}
+
+a {
+    color: var(--blue-grey-50);
+    text-decoration: none;
+    padding: 4rem 1.688rem;
+}
+
+.button {
+    color: var(--blue-grey-50);
+    text-decoration: none;
+    font-family: Arial;
+    border: 2px black solid;
+    background-color: #111111;
+    border-radius: 0.5rem;
+    padding: 1rem 1.188rem;
+    display: inline-block; 
+    margin-bottom: 2rem; 
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six,
+.section-seven {
+    padding: 4rem 1.688rem;
+}
+
+.section-one {
+    background-color: var(--blue-grey-50);
+}
+
+.section-two {
+    background-color: #FFFFFF;
+}
+
+.section-three {
+    background-color: #FFFFFF;
+}
+
+.asterik {
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.section-three p {
+    padding-bottom: 1.5rem;
+}
+
+.section-four,
+.index-blockquote {
+    background-color: var(--blue-grey-400);
+    color: white;
+}
+
+.index-blockquote {
+    font-size: 1.75rem;
+    font-weight: lighter;
+}
+
+.section-five {
+    background-color: #CFD8DC;
+}
+
+.section-six {
+    text-align: left;
+    background-color: #CFD8DC;
+}
+
+.section-six img {
+    padding-bottom: 3rem;
+}
+
+.section-seven {
+    background-color: var(--blue-grey-800);
+}
+
+.big-button {
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer {
+    background-color: #111111;
+    padding: 4rem 1.688rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-logo-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-flex .logo-container {
+    display: flex;
+}
+
+.footer-logo-flex h4,
+.footer-logo-flex p {
+    margin: 0;
+}
+
+.footer-links ul li a {
+    padding: 0;
+    font-size: 14px;
+}
+
+footer h5 {
+    font-size: 1rem;
+    text-align: left;
+}
+
+footer p {
+    color: var(--blue-grey-200);
+    margin: 3rem 5rem 0;
+}
+
+/* Styling for Gallery Page */
+.section-eight,
+.section-nine,
+.section-ten {
+    text-align: left;
+    padding: 2rem 2rem;
+}
+
+.section-eight {
+    background-color: var(--blue-grey-50);
+}
+
+.section-eight h2 {
+    text-align: center;
+}
+
+.section-eight h3 {
+    padding: 2rem 0;
+    font-weight: bold;
+}
+
+blockquote {
+    padding: 2rem 2rem;
+    background-color: #FFFFFF;
+    font-size: 1.6rem;
+}
+
+.section-nine {
+    background-color: var(--blue-grey-400);
+    color: #ffffff;
+}
+
+.section-ten {
+    background-color: var(--blue-grey-800);
+    color: #ffffff;
+}
+
+
+@media screen and (min-width:768px) {
+    .header {
+        display: flex;
+        gap: 8rem;
+    }
+
+    .title-flex {
+        justify-content: flex-start; 
+    }
+
+    .top-nav-flex {
+        justify-content: flex-end; 
+        padding-right: 0; 
+    }
+
+    .section-three {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust spacing */
+        justify-content: space-between;
+    }
+
+    .section-three section {
+        flex: 1 1 calc(50% - 10px); /* Each section takes up half the width */
+        text-align: left;
+    }
+
+    
+    .section-six {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-six section {
+        display: flex;
+        margin: 1rem;
+    }
+
+    .section-six img {
+        padding-top: 2rem;
+        max-width: 50%; 
+    }
+    
+    .section-six section:nth-of-type(2) {
+        flex-direction: row-reverse; 
+        gap: 2rem
+    }
+
+    footer nav{
+        display: flex;
+        align-items: center;
+        }
+    
+    .footer-logo-flex h4,
+    .footer-logo-flex p {
+    margin: 0;
+    text-align: left; 
+}
+        
+/* 768 min Width for Gallery Page */
+
+.section-eight-flex-one {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-eight-flex-one img {
+    width: 50%;
+    padding-bottom: 2rem;
+}
+
+.section-eight-flex-two {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    flex-direction: row-reverse;
+}
+
+.section-eight-flex-two div {
+    width: 50%;
+}
+   
+.section-nine h2{
+    text-align: center;
+}
+
+.section-nine-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.section-nine-flex p {
+    width: 48%;
+    margin: 0;
+}
+
+.section-ten h2{
+    text-align: center;
+}
+
+.list-and-image-flex {
+    display: flex; /* whole thing flexing */
+    gap: 1.5rem; /* Space between image and text content */
+}
+
+.big-image {
+    width: 40%;
+    height: 44rem
+}
+
+.text-content {
+ 
+    display: flex;
+    flex-direction: column; /* Stack ul and below-list vertically */
+}
+
+.below-list-div {
+
+    gap: 1rem; /* Space between image and text */
+    margin-top: 2rem; /* Add space between ul and below-list */
+}
+
+.text-content li{
+    padding: 0.5rem 0;
+}
+
+}
+
+@media screen and (min-width: 965px) {
+
+    .container{
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    .section-three section {
+        flex: 1 1 calc(30% - 10px); /* Each section takes up half the width */
+        text-align: left;
+    }
+    
+
+
+    .section-six {
+        display: flex; /* Use flexbox for the section */
+        flex-direction: row; /* Arrange sections side by side */
+
+    }
+
+    .section-six > section {
+        display: flex; /* Use flexbox for each individual section */
+        flex-direction: column; /* Stack text and image vertically */
+        flex: 1; /* Allow each section to take equal space */
+
+    }
+
+    .section-six .text-content {
+        flex: 1; /* Allow text content to take available space */
+    }
+
+    .section-six img {
+        max-width: 100%; /* Ensure image is responsive */
+    }
+
+    /* Explicitly set the second section to not use row-reverse */
+    .section-six section:nth-of-type(2) {
+        flex-direction: column; /* Ensure it stacks text above image */
+    }
+
+    .big-button{
+        width: 60%;
+        margin-left: 14rem;
+    }
+
+    .footer-nav{
+        margin-right: 10rem;
+    }
+
+    /* 1200 min Width for Gallery Page */
 }
