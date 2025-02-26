@@ -25,8 +25,12 @@ header {
 }
 
 .title-flex {
-    display: flex;
-    justify-content: center;
+display: flex;
+width: 35%;
+}
+
+.title-flex img{
+    height: 8vh;
 }
 
 h1, h4 {
@@ -216,9 +220,15 @@ blockquote {
 
 
 @media screen and (min-width:768px) {
-    .header {
+    header {
         display: flex;
-        gap: 8rem;
+        gap: 9rem;
+        align-items: center;
+    }
+
+    header img{
+        width: 60%;
+        height: 9vh;
     }
 
     .title-flex {
@@ -348,8 +358,8 @@ blockquote {
 @media screen and (min-width: 965px) {
 
     .container{
-        margin: 0 auto;
         max-width: 1100px;
+        margin: 0 auto;
     }
 
     .section-three section {
@@ -394,5 +404,4 @@ blockquote {
         margin-right: 10rem;
     }
 
-    /* 1200 min Width for Gallery Page */
 }
